@@ -9,7 +9,7 @@ body {
   height: auto;
   width: 100vw;
   overflow-x: hidden;
-  background: linear-gradient(45deg, rgb(220, 220, 220), transparent);
+  background: #f1f0ee;
 }
 main {
   height: auto;
@@ -40,7 +40,8 @@ main {
   margin-left: -9rem;
   margin-top: 5rem;
   font-size: 30px;
-  text-transform: capitalize;
+  font-variant: small-caps;
+  /* text-transform: uppercase; */
 }
 form {
   width: 100%;
@@ -93,12 +94,12 @@ form {
 .imageCard {
   width: 22%;
   margin-top: 3rem;
-  background-color: hsl(203, 92%, 85%);
+  background: hsl(228, 8%, 12%);
   border-radius: 5px;
 }
 
 .imageCard:hover {
-  background-color: hsl(203, 92%, 75%);
+  background-color: hsl(230, 23%, 29%);
 }
 #imageData {
   width: 100%;
@@ -119,10 +120,6 @@ form {
   cursor: pointer;
 }
 
-#imageData:hover .imageCard {
-  background-color: blue;
-}
-
 #captionData {
   display: flex;
   justify-content: center;
@@ -132,9 +129,12 @@ form {
   width: 100%;
   min-height: 1.5rem;
   padding: 0px 10px;
-  color: rgb(75, 75, 75);
   letter-spacing: 1px;
   font-family: "Roboto";
+  font-size: 14px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 400;
 }
 
 .showMoreBtm {
@@ -142,18 +142,19 @@ form {
   width: 7rem;
   height: 2.5rem;
   border-radius: 10px;
-  background-color: hsl(0, 0%, 23%);
+  background-color: hsl(0, 0%, 13%);
   color: white;
   border: none;
   font-size: 16px;
   margin-bottom: 1.5rem;
   cursor: pointer;
   transition: 0.3s;
+  font-variant: small-caps;
 }
 
 .showMoreBtm:hover {
   transform: scale(0.95);
-  background-color: hsl(0, 0%, 13%);
+  background-color: #4cc1d0;
 }
 
 @media screen and (max-width: 320px) {
@@ -192,7 +193,6 @@ form {
     margin-left: 0rem;
     margin-top: 5rem;
     font-size: 30px;
-    text-transform: capitalize;
   }
   form {
     width: 100%;
@@ -245,13 +245,9 @@ form {
   .imageCard {
     width: 100%;
     margin-top: 3rem;
-    background-color: hsl(203, 92%, 85%);
     border-radius: 5px;
   }
 
-  .imageCard:hover {
-    background-color: hsl(203, 92%, 75%);
-  }
   #imageData {
     width: 100%;
     overflow: hidden;
@@ -271,10 +267,6 @@ form {
     cursor: pointer;
   }
 
-  #imageData:hover .imageCard {
-    background-color: blue;
-  }
-
   #captionData {
     display: flex;
     justify-content: center;
@@ -284,7 +276,6 @@ form {
     width: 100%;
     min-height: 1.5rem;
     padding: 0px 10px;
-    color: rgb(75, 75, 75);
     letter-spacing: 1px;
     font-family: "Roboto";
   }
@@ -338,7 +329,6 @@ form {
     margin-left: 0rem;
     margin-top: 5rem;
     font-size: 30px;
-    text-transform: capitalize;
   }
   form {
     width: 100%;
@@ -391,13 +381,9 @@ form {
   .imageCard {
     width: 100%;
     margin-top: 3rem;
-    background-color: hsl(203, 92%, 85%);
     border-radius: 5px;
   }
 
-  .imageCard:hover {
-    background-color: hsl(203, 92%, 75%);
-  }
   #imageData {
     width: 100%;
     overflow: hidden;
@@ -430,7 +416,6 @@ form {
     width: 100%;
     min-height: 1.5rem;
     padding: 0px 10px;
-    color: rgb(75, 75, 75);
     letter-spacing: 1px;
     font-family: "Roboto";
   }
@@ -484,7 +469,6 @@ form {
     margin-left: -4rem;
     margin-top: 5rem;
     font-size: 30px;
-    text-transform: capitalize;
   }
   form {
     width: 100%;
@@ -537,13 +521,9 @@ form {
   .imageCard {
     width: 100%;
     margin-top: 3rem;
-    background-color: hsl(203, 92%, 85%);
     border-radius: 5px;
   }
 
-  .imageCard:hover {
-    background-color: hsl(203, 92%, 75%);
-  }
   #imageData {
     width: 100%;
     overflow: hidden;
@@ -576,7 +556,6 @@ form {
     width: 100%;
     min-height: 1.5rem;
     padding: 0px 10px;
-    color: rgb(75, 75, 75);
     letter-spacing: 1px;
     font-family: "Roboto";
   }
@@ -630,7 +609,6 @@ form {
     margin-left: -6rem;
     margin-top: 5rem;
     font-size: 30px;
-    text-transform: capitalize;
   }
   form {
     width: 100%;
@@ -683,13 +661,9 @@ form {
   .imageCard {
     width: 46%;
     margin-top: 3rem;
-    background-color: hsl(203, 92%, 85%);
     border-radius: 5px;
   }
 
-  .imageCard:hover {
-    background-color: hsl(203, 92%, 75%);
-  }
   #imageData {
     width: 100%;
     overflow: hidden;
@@ -722,7 +696,6 @@ form {
     width: 100%;
     min-height: 1.5rem;
     padding: 0px 10px;
-    color: rgb(75, 75, 75);
     letter-spacing: 1px;
     font-family: "Roboto";
   }
