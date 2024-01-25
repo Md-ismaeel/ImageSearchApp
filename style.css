@@ -142,12 +142,18 @@ form {
   width: 7rem;
   height: 2.5rem;
   border-radius: 10px;
-  background-color: hsl(240, 100%, 64%);
+  background-color: hsl(0, 0%, 23%);
   color: white;
   border: none;
   font-size: 16px;
   margin-bottom: 1.5rem;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.showMoreBtm:hover {
+  transform: scale(0.95);
+  background-color: hsl(0, 0%, 13%);
 }
 
 @media screen and (max-width: 320px) {
@@ -288,7 +294,6 @@ form {
     width: 7rem;
     height: 2.5rem;
     border-radius: 10px;
-    background-color: hsl(240, 100%, 64%);
     color: white;
     border: none;
     font-size: 16px;
@@ -435,7 +440,6 @@ form {
     width: 7rem;
     height: 2.5rem;
     border-radius: 10px;
-    background-color: hsl(240, 100%, 64%);
     color: white;
     border: none;
     font-size: 16px;
@@ -477,7 +481,7 @@ form {
     gap: 3rem;
   }
   .h1TAg {
-    margin-left: 0rem;
+    margin-left: -4rem;
     margin-top: 5rem;
     font-size: 30px;
     text-transform: capitalize;
@@ -582,7 +586,6 @@ form {
     width: 7rem;
     height: 2.5rem;
     border-radius: 10px;
-    background-color: hsl(240, 100%, 64%);
     color: white;
     border: none;
     font-size: 16px;
@@ -729,7 +732,6 @@ form {
     width: 7rem;
     height: 2.5rem;
     border-radius: 10px;
-    background-color: hsl(240, 100%, 64%);
     color: white;
     border: none;
     font-size: 16px;
