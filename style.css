@@ -1,0 +1,739 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: auto;
+  width: 100vw;
+  overflow-x: hidden;
+  background: linear-gradient(45deg, rgb(220, 220, 220), transparent);
+}
+main {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+#child {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #80deea;
+  gap: 3rem;
+}
+.h1TAg {
+  margin-left: -9rem;
+  margin-top: 5rem;
+  font-size: 30px;
+  text-transform: capitalize;
+}
+form {
+  width: 100%;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+#inputText {
+  width: 28rem;
+  height: 2.5rem;
+  font-size: 18px;
+  padding: 0px 10px;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px rgb(206, 206, 206);
+  background-color: white;
+}
+
+#searchBtn {
+  width: 6rem;
+  height: 2.6rem;
+  font-size: 20px;
+  background: none;
+  border: 0;
+  border-radius: 5px;
+  color: #ffff;
+  font: bold;
+  text-shadow: 1px 1px black;
+  background-color: hsl(120, 80%, 47%);
+}
+
+#searchBtn:hover {
+  cursor: pointer;
+  transform: scale(0.97);
+  background-color: hsl(120, 80%, 37%);
+}
+
+.imageList {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: initial;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  padding: 0rem 2rem;
+}
+
+.imageCard {
+  width: 22%;
+  margin-top: 3rem;
+  background-color: hsl(203, 92%, 85%);
+  border-radius: 5px;
+}
+
+.imageCard:hover {
+  background-color: hsl(203, 92%, 75%);
+}
+#imageData {
+  width: 100%;
+  overflow: hidden;
+  background-position: center;
+  border-radius: 5px;
+}
+
+#imageData img {
+  height: 220px;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  background-position: center;
+}
+
+#imageData img:hover {
+  transform: scale(1.08);
+  cursor: pointer;
+}
+
+#imageData:hover .imageCard {
+  background-color: blue;
+}
+
+#captionData {
+  display: flex;
+  justify-content: center;
+  text-align: start;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  min-height: 1.5rem;
+  padding: 0px 10px;
+  color: rgb(75, 75, 75);
+  letter-spacing: 1px;
+  font-family: "Roboto";
+}
+
+.showMoreBtm {
+  display: none;
+  width: 7rem;
+  height: 2.5rem;
+  border-radius: 10px;
+  background-color: hsl(240, 100%, 64%);
+  color: white;
+  border: none;
+  font-size: 16px;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 320px) {
+  body {
+    height: auto;
+    width: 100vw;
+    overflow-x: hidden;
+    background: linear-gradient(45deg, rgb(220, 220, 220), transparent);
+  }
+  main {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  #child {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #80deea;
+    gap: 3rem;
+  }
+  .h1TAg {
+    margin-left: 0rem;
+    margin-top: 5rem;
+    font-size: 30px;
+    text-transform: capitalize;
+  }
+  form {
+    width: 100%;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  #inputText {
+    width: 11rem;
+    height: 2.5rem;
+    font-size: 18px;
+    padding: 0px 10px;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px rgb(206, 206, 206);
+    background-color: white;
+  }
+
+  #searchBtn {
+    width: 6rem;
+    height: 2.6rem;
+    font-size: 20px;
+    background: none;
+    border: 0;
+    border-radius: 5px;
+    color: #ffff;
+    font: bold;
+    text-shadow: 1px 1px black;
+    background-color: hsl(120, 80%, 47%);
+  }
+
+  #searchBtn:hover {
+    cursor: pointer;
+    transform: scale(0.97);
+    background-color: hsl(120, 80%, 37%);
+  }
+
+  .imageList {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: initial;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    padding: 0rem 2rem;
+  }
+
+  .imageCard {
+    width: 100%;
+    margin-top: 3rem;
+    background-color: hsl(203, 92%, 85%);
+    border-radius: 5px;
+  }
+
+  .imageCard:hover {
+    background-color: hsl(203, 92%, 75%);
+  }
+  #imageData {
+    width: 100%;
+    overflow: hidden;
+    background-position: center;
+    border-radius: 5px;
+  }
+
+  #imageData img {
+    height: 220px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    background-position: center;
+  }
+
+  #imageData img:hover {
+    transform: scale(1.08);
+    cursor: pointer;
+  }
+
+  #imageData:hover .imageCard {
+    background-color: blue;
+  }
+
+  #captionData {
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    min-height: 1.5rem;
+    padding: 0px 10px;
+    color: rgb(75, 75, 75);
+    letter-spacing: 1px;
+    font-family: "Roboto";
+  }
+
+  .showMoreBtm {
+    display: none;
+    width: 7rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    background-color: hsl(240, 100%, 64%);
+    color: white;
+    border: none;
+    font-size: 16px;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 376px) {
+  body {
+    height: auto;
+    width: 100vw;
+    overflow-x: hidden;
+    background: linear-gradient(45deg, rgb(220, 220, 220), transparent);
+  }
+  main {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  #child {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #80deea;
+    gap: 3rem;
+  }
+  .h1TAg {
+    margin-left: 0rem;
+    margin-top: 5rem;
+    font-size: 30px;
+    text-transform: capitalize;
+  }
+  form {
+    width: 100%;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  #inputText {
+    width: 13rem;
+    height: 2.5rem;
+    font-size: 18px;
+    padding: 0px 10px;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px rgb(206, 206, 206);
+    background-color: white;
+  }
+
+  #searchBtn {
+    width: 6rem;
+    height: 2.6rem;
+    font-size: 20px;
+    background: none;
+    border: 0;
+    border-radius: 5px;
+    color: #ffff;
+    font: bold;
+    text-shadow: 1px 1px black;
+    background-color: hsl(120, 80%, 47%);
+  }
+
+  #searchBtn:hover {
+    cursor: pointer;
+    transform: scale(0.97);
+    background-color: hsl(120, 80%, 37%);
+  }
+
+  .imageList {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: initial;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    padding: 0rem 2rem;
+  }
+
+  .imageCard {
+    width: 100%;
+    margin-top: 3rem;
+    background-color: hsl(203, 92%, 85%);
+    border-radius: 5px;
+  }
+
+  .imageCard:hover {
+    background-color: hsl(203, 92%, 75%);
+  }
+  #imageData {
+    width: 100%;
+    overflow: hidden;
+    background-position: center;
+    border-radius: 5px;
+  }
+
+  #imageData img {
+    height: 220px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    background-position: center;
+  }
+
+  #imageData img:hover {
+    transform: scale(1.08);
+    cursor: pointer;
+  }
+
+  #imageData:hover .imageCard {
+    background-color: blue;
+  }
+
+  #captionData {
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    min-height: 1.5rem;
+    padding: 0px 10px;
+    color: rgb(75, 75, 75);
+    letter-spacing: 1px;
+    font-family: "Roboto";
+  }
+
+  .showMoreBtm {
+    display: none;
+    width: 7rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    background-color: hsl(240, 100%, 64%);
+    color: white;
+    border: none;
+    font-size: 16px;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 377px) and (max-width: 426px) {
+  body {
+    height: auto;
+    width: 100vw;
+    overflow-x: hidden;
+    background: linear-gradient(45deg, rgb(220, 220, 220), transparent);
+  }
+  main {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  #child {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #80deea;
+    gap: 3rem;
+  }
+  .h1TAg {
+    margin-left: 0rem;
+    margin-top: 5rem;
+    font-size: 30px;
+    text-transform: capitalize;
+  }
+  form {
+    width: 100%;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  #inputText {
+    width: 17rem;
+    height: 2.5rem;
+    font-size: 18px;
+    padding: 0px 10px;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px rgb(206, 206, 206);
+    background-color: white;
+  }
+
+  #searchBtn {
+    width: 6rem;
+    height: 2.6rem;
+    font-size: 20px;
+    background: none;
+    border: 0;
+    border-radius: 5px;
+    color: #ffff;
+    font: bold;
+    text-shadow: 1px 1px black;
+    background-color: hsl(120, 80%, 47%);
+  }
+
+  #searchBtn:hover {
+    cursor: pointer;
+    transform: scale(0.97);
+    background-color: hsl(120, 80%, 37%);
+  }
+
+  .imageList {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: initial;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    padding: 0rem 2rem;
+  }
+
+  .imageCard {
+    width: 100%;
+    margin-top: 3rem;
+    background-color: hsl(203, 92%, 85%);
+    border-radius: 5px;
+  }
+
+  .imageCard:hover {
+    background-color: hsl(203, 92%, 75%);
+  }
+  #imageData {
+    width: 100%;
+    overflow: hidden;
+    background-position: center;
+    border-radius: 5px;
+  }
+
+  #imageData img {
+    height: 220px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    background-position: center;
+  }
+
+  #imageData img:hover {
+    transform: scale(1.08);
+    cursor: pointer;
+  }
+
+  #imageData:hover .imageCard {
+    background-color: blue;
+  }
+
+  #captionData {
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    min-height: 1.5rem;
+    padding: 0px 10px;
+    color: rgb(75, 75, 75);
+    letter-spacing: 1px;
+    font-family: "Roboto";
+  }
+
+  .showMoreBtm {
+    display: none;
+    width: 7rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    background-color: hsl(240, 100%, 64%);
+    color: white;
+    border: none;
+    font-size: 16px;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 427px) and (max-width: 768px) {
+  body {
+    height: auto;
+    width: 100vw;
+    overflow-x: hidden;
+    background: linear-gradient(45deg, rgb(220, 220, 220), transparent);
+  }
+  main {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  #child {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #80deea;
+    gap: 3rem;
+  }
+  .h1TAg {
+    margin-left: -6rem;
+    margin-top: 5rem;
+    font-size: 30px;
+    text-transform: capitalize;
+  }
+  form {
+    width: 100%;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  #inputText {
+    width: 25rem;
+    height: 2.5rem;
+    font-size: 18px;
+    padding: 0px 10px;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px rgb(206, 206, 206);
+    background-color: white;
+  }
+
+  #searchBtn {
+    width: 6rem;
+    height: 2.6rem;
+    font-size: 20px;
+    background: none;
+    border: 0;
+    border-radius: 5px;
+    color: #ffff;
+    font: bold;
+    text-shadow: 1px 1px black;
+    background-color: hsl(120, 80%, 47%);
+  }
+
+  #searchBtn:hover {
+    cursor: pointer;
+    transform: scale(0.97);
+    background-color: hsl(120, 80%, 37%);
+  }
+
+  .imageList {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: initial;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    padding: 0rem 2rem;
+  }
+
+  .imageCard {
+    width: 46%;
+    margin-top: 3rem;
+    background-color: hsl(203, 92%, 85%);
+    border-radius: 5px;
+  }
+
+  .imageCard:hover {
+    background-color: hsl(203, 92%, 75%);
+  }
+  #imageData {
+    width: 100%;
+    overflow: hidden;
+    background-position: center;
+    border-radius: 5px;
+  }
+
+  #imageData img {
+    height: 220px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    background-position: center;
+  }
+
+  #imageData img:hover {
+    transform: scale(1.08);
+    cursor: pointer;
+  }
+
+  #imageData:hover .imageCard {
+    background-color: blue;
+  }
+
+  #captionData {
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    min-height: 1.5rem;
+    padding: 0px 10px;
+    color: rgb(75, 75, 75);
+    letter-spacing: 1px;
+    font-family: "Roboto";
+  }
+
+  .showMoreBtm {
+    display: none;
+    width: 7rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    background-color: hsl(240, 100%, 64%);
+    color: white;
+    border: none;
+    font-size: 16px;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+  }
+}
