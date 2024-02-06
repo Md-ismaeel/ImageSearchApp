@@ -6,21 +6,24 @@ const showMoreBtm = document.querySelector(".showMoreBtm");
 const accessKey = "KaAbLeE5ARrqQXhHf2QfqQzt2imDHOiGlKbcBGPu3iY";
 let page = 1;
 
-async function imageSearch() {
+async function searchImageApi() {
   let inputVal = inputText.value;
-  const url = `https://api.unsplash.com/search/photos?page=${page}=1&query=${inputVal}&client_id=${accessKey}&per_page=20`;
-  console.log(inputVal);
-  const response = await fetch(url);
+  const urlOfApi = `https://api.unsplash.com/search/photos?page=${page}&query=${inputVal}&client_id=${accessKey}&per_page=20`;
+  const response = await fetch(urlOfApi);
   const data = await response.json();
-
   console.log(data);
 
   data.results.forEach((element) => {
-    let imageCard = document.createElement("div");
-    imageCard.innerHTML = `<figure id="imageData"><img src= ${element.urls.small} alt ="image"/> <p id="captionData">${element.alt_description}</p></figure>`;
+    let image_Card = document.createElement("div");
 
-    imageCard.classList.add("imageCard");
-    imageList.appendChild(imageCard);
+    image_Card.innerHTML = `
+    <figure id="imageData">
+    <img src = ${element.urls.small} alt ="image"/>
+    <p id="captionData">${element.alt_description}<p>
+    </figure>`;
+
+    image_Card.classList.add("imageCard");
+    imageList.appendChild(image_Card);
 
     page++;
     if (page > 1) {
@@ -28,14 +31,11 @@ async function imageSearch() {
     }
   });
 }
-
 showMoreBtm.addEventListener("click", () => {
-  console.log("working");
-  imageSearch();
+  searchImageApi();
 });
 
 searchBtn.addEventListener("click", (event) => {
   event.preventDefault();
-  // page = 1;
-  imageSearch();
+  searchImageApi();
 });
