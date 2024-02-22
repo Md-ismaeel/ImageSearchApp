@@ -31,9 +31,7 @@ async function searchImageApi() {
     }
   });
 }
-showMoreBtm.addEventListener("click", () => {
-  searchImageApi();
-});
+showMoreBtm.addEventListener("click", searchImageApi);
 
 searchBtn.addEventListener("click", (event) => {
   event.preventDefault();
